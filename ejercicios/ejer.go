@@ -1,10 +1,12 @@
 package ejercicios
 
-import "strconv"
+import (
+	"strconv"
+)
 
-func convNumerico(textonumero string) (int, string) {
+func ConviertoaNumero(texto string) (int, string) {
 
-	numerito, err := strconv.Atoi(textonumero)
+	numerito, err := strconv.Atoi(texto)
 	if err != nil {
 		return 0, "Hubo un error" + err.Error()
 	}
@@ -13,4 +15,5 @@ func convNumerico(textonumero string) (int, string) {
 	} else {
 		return numerito, "Es menor a 100"
 	}
+
 }

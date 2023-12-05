@@ -2,14 +2,16 @@ package main
 
 import (
 	"fmt"
+
+	"github.com/hello/ejercicios"
 )
 
 func main() {
 
-	ola, cola := ejercicios.convNumerico("500")
+	ola, cola := ejercicios.ConviertoaNumero("500")
 
-	fmt.Println(numero)
-	fmt.Println(texto)
+	fmt.Println(ola)
+	fmt.Println(cola)
 	/*if os := runtime.GOOS; os == "linux" || os == "OS X." {
 		fmt.Println("Esto no es Windows")
 	} else {
